@@ -10,7 +10,6 @@ export const createHotel = async (req,res,next)=>{
         next(err);
     }
 } 
-
 //update
 export const updateHotel = async (req,res,next)=>{
     try{

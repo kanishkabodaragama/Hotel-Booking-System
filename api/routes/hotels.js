@@ -12,10 +12,10 @@ router.post("/",createHotel );//create
 
 router.put("/:id",updateHotel);//update
 
-router.put("/:id",deleteHotel);//delete
+router.delete("/:id",deleteHotel);//delete
 
-router.put("/:id",getHotel);//get
+router.get("/:id",getHotel);//get
 
-router.put("/",getHotels);//getall
+router.get("/",getHotels);//getall
 
 export default router 
