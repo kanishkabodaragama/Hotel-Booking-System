@@ -5,6 +5,7 @@ import authRoute from "./routes/auth.js";
 import hotelRoute from "./routes/hotels.js";
 import roomRoute from "./routes/rooms.js";
 import usersRoute from "./routes/users.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
@@ -51,6 +52,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/hotels", hotelRoute);
 app.use("/api/rooms", roomRoute);
 app.use("/api/users", usersRoute);
+app.use(cookieParser())
 
 
 app.get("/", (req,res)=>{
